@@ -17,69 +17,87 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wr9-5O-EpX">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="298" width="414" height="564"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CryptoCell" rowHeight="99" id="OZO-ZC-R21" customClass="CryptoTableViewCell" customModule="CryptoMrypto" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="414" height="99"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CryptoCell" rowHeight="52" id="OZO-ZC-R21" customClass="CryptoTableViewCell" customModule="CryptoMrypto" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="52"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OZO-ZC-R21" id="2rz-Bq-Y7R">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="99"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="52"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6g-Wf-dub">
-                                                    <rect key="frame" x="106" y="11" width="284" height="38"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bitcoin / USD" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6g-Wf-dub">
+                                                    <rect key="frame" x="5" y="10" width="125" height="32"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="125" id="hEG-XY-ceC"/>
+                                                        <constraint firstAttribute="height" constant="32" id="u5i-Ma-nyv"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAj-bB-Ihi">
-                                                    <rect key="frame" x="106" y="62" width="288" height="26"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%3.5" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ob-xW-yMN">
+                                                    <rect key="frame" x="302" y="10" width="65" height="30"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="26" id="ggr-yM-471"/>
+                                                        <constraint firstAttribute="height" constant="30" id="2jW-JM-7lJ"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitcoinsign.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="41o-0j-qPU">
-                                                    <rect key="frame" x="20" y="18.5" width="65" height="62"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="62,234.034" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAj-bB-Ihi">
+                                                    <rect key="frame" x="145" y="10" width="125" height="30"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="65" id="HIA-bB-H71"/>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="lIU-1m-Rcv"/>
-                                                        <constraint firstAttribute="width" constant="65" id="pvH-9R-8tZ"/>
+                                                        <constraint firstAttribute="width" constant="125" id="7Of-gR-dT7"/>
+                                                        <constraint firstAttribute="height" constant="30" id="kXA-mK-zHs"/>
                                                     </constraints>
-                                                </imageView>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="EAj-bB-Ihi" firstAttribute="bottom" secondItem="2rz-Bq-Y7R" secondAttribute="bottomMargin" id="2GM-ry-yWa"/>
-                                                <constraint firstItem="f6g-Wf-dub" firstAttribute="leading" secondItem="EAj-bB-Ihi" secondAttribute="leading" id="EYy-cZ-DTf"/>
-                                                <constraint firstItem="EAj-bB-Ihi" firstAttribute="top" secondItem="f6g-Wf-dub" secondAttribute="bottom" constant="13" id="Rat-BV-3S0"/>
-                                                <constraint firstItem="41o-0j-qPU" firstAttribute="leading" secondItem="2rz-Bq-Y7R" secondAttribute="leadingMargin" id="WzK-gy-8Sa"/>
-                                                <constraint firstItem="41o-0j-qPU" firstAttribute="top" secondItem="2rz-Bq-Y7R" secondAttribute="topMargin" constant="7" id="aDL-8W-VvQ"/>
-                                                <constraint firstItem="f6g-Wf-dub" firstAttribute="top" secondItem="2rz-Bq-Y7R" secondAttribute="topMargin" id="apQ-Qx-8bw"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="f6g-Wf-dub" secondAttribute="trailing" constant="4" id="bKr-uX-MpO"/>
-                                                <constraint firstItem="EAj-bB-Ihi" firstAttribute="trailing" secondItem="2rz-Bq-Y7R" secondAttribute="trailingMargin" id="eb4-jZ-ecO"/>
-                                                <constraint firstItem="f6g-Wf-dub" firstAttribute="leading" secondItem="41o-0j-qPU" secondAttribute="trailing" constant="21" id="nix-SC-TMf"/>
-                                                <constraint firstItem="41o-0j-qPU" firstAttribute="centerY" secondItem="2rz-Bq-Y7R" secondAttribute="centerY" id="qOH-YB-SLa"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="7Ob-xW-yMN" secondAttribute="trailing" constant="27" id="76J-GC-MOc"/>
+                                                <constraint firstAttribute="bottom" secondItem="f6g-Wf-dub" secondAttribute="bottom" constant="10" id="HrQ-Rp-BJa"/>
+                                                <constraint firstItem="f6g-Wf-dub" firstAttribute="top" secondItem="2rz-Bq-Y7R" secondAttribute="top" constant="10" id="IwR-au-c02"/>
+                                                <constraint firstItem="EAj-bB-Ihi" firstAttribute="top" secondItem="2rz-Bq-Y7R" secondAttribute="top" constant="10" id="KVK-Xv-Jpi"/>
+                                                <constraint firstAttribute="bottom" secondItem="EAj-bB-Ihi" secondAttribute="bottom" constant="12" id="MLg-fM-cnC"/>
+                                                <constraint firstItem="7Ob-xW-yMN" firstAttribute="top" secondItem="2rz-Bq-Y7R" secondAttribute="topMargin" constant="-1" id="RGB-Eh-nib"/>
+                                                <constraint firstItem="EAj-bB-Ihi" firstAttribute="leading" secondItem="f6g-Wf-dub" secondAttribute="trailing" constant="15" id="b1H-Kd-fd9"/>
+                                                <constraint firstItem="EAj-bB-Ihi" firstAttribute="leading" secondItem="f6g-Wf-dub" secondAttribute="trailing" constant="15" id="bB6-kp-aRk"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="7Ob-xW-yMN" secondAttribute="bottom" constant="1" id="kYS-S9-rbk"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="EAj-bB-Ihi" secondAttribute="bottom" constant="1" id="kbK-ey-fUg"/>
+                                                <constraint firstItem="f6g-Wf-dub" firstAttribute="leading" secondItem="2rz-Bq-Y7R" secondAttribute="leading" constant="5" id="n1K-CD-v8r"/>
+                                                <constraint firstItem="EAj-bB-Ihi" firstAttribute="top" secondItem="2rz-Bq-Y7R" secondAttribute="topMargin" constant="-1" id="o5s-pF-Nll"/>
+                                                <constraint firstItem="EAj-bB-Ihi" firstAttribute="top" secondItem="2rz-Bq-Y7R" secondAttribute="top" constant="10" id="ys5-Vl-acx"/>
+                                                <constraint firstItem="7Ob-xW-yMN" firstAttribute="leading" secondItem="EAj-bB-Ihi" secondAttribute="trailing" constant="32" id="zmE-n1-eIt"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="cryptoImage" destination="41o-0j-qPU" id="oJ0-OP-XiQ"/>
                                             <outlet property="cryptoName" destination="f6g-Wf-dub" id="FEC-W2-XFP"/>
                                             <outlet property="cryptoPrice" destination="EAj-bB-Ihi" id="liS-pG-23f"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner" translatesAutoresizingMaskIntoConstraints="NO" id="CFz-Pb-k0s">
+                                <rect key="frame" x="0.0" y="88" width="414" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="1Ua-Qe-enO"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="wr9-5O-EpX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SMV-Yk-lMJ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wr9-5O-EpX" secondAttribute="trailing" id="Yx1-e7-AvL"/>
-                            <constraint firstItem="wr9-5O-EpX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="iEK-ZQ-SDM"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wr9-5O-EpX" secondAttribute="bottom" id="qhD-N9-l9M"/>
+                            <constraint firstItem="CFz-Pb-k0s" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="88" id="5mu-OF-a6f"/>
+                            <constraint firstItem="wr9-5O-EpX" firstAttribute="top" secondItem="CFz-Pb-k0s" secondAttribute="bottom" constant="50" id="76H-vN-gWu"/>
+                            <constraint firstItem="wr9-5O-EpX" firstAttribute="trailing" secondItem="CFz-Pb-k0s" secondAttribute="trailing" id="Ptu-Nd-SdV"/>
+                            <constraint firstItem="CFz-Pb-k0s" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cwH-p0-es7"/>
+                            <constraint firstItem="wr9-5O-EpX" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="hyW-5h-n9j"/>
+                            <constraint firstAttribute="trailing" secondItem="CFz-Pb-k0s" secondAttribute="trailing" id="rcm-Ed-40A"/>
+                            <constraint firstItem="wr9-5O-EpX" firstAttribute="leading" secondItem="CFz-Pb-k0s" secondAttribute="leading" id="tox-gU-w5A"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0rR-wC-fzm"/>
@@ -128,7 +146,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bitcoinsign.circle" catalog="system" width="128" height="121"/>
+        <image name="banner" width="834" height="556"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

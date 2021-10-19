@@ -52,15 +52,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CryptoCell", for: indexPath) as! CryptoTableViewCell
         let cryptoViewModel = self.cryptoListViewModel.cryptoModelAtIndex(indexPath.row)
-        cell.cryptoName.text = cryptoViewModel.name
+        cell.cryptoName.text = "\(cryptoViewModel.name)/USD"
         cell.cryptoPrice.text = cryptoViewModel.price
-        let url = URL(string: cryptoViewModel.logoUrl)
-        DispatchQueue.global().async {
-            let data = try? Data(contentsOf: url!) // url nil dönüyor kontrol et
+      //  let url = URL(string: cryptoViewModel.logoUrl)
+       // let defaultUrl = URL(string: "https://image.pngaaa.com/391/204391-small.png")
+    /*   DispatchQueue.global().async {
+      //      let data = try? Data(contentsOf: (url ?? defaultUrl)!)
+        
+             // url nil dönüyor kontrol et
             DispatchQueue.main.async {
-                cell.cryptoImage.image = UIImage(data: data!)
+                //cell.cryptoImage.image = UIImage(data: data!)
             }
-        }
+        }*/
         
         
         return cell

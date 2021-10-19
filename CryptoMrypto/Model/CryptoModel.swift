@@ -13,5 +13,4 @@ struct CryptoModel : Decodable {
     let name : String
     let logo_url : String
     let price : String
-    
 }
